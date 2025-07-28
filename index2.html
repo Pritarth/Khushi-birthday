@@ -2,108 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happiest Birthday Dobii</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happiest Birthday Dobii 🎂</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
-      font-family: 'Quicksand', sans-serif;
-      overflow: hidden;
-      color: #fff;
-      background: #ffd6ec;
-    }
-
-    #background {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
       height: 100vh;
-      z-index: -1;
-    }
-
-    .content {
-      position: relative;
-      z-index: 1;
+      background: linear-gradient(-45deg, #fbdce2, #d8eafd, #e4d9fb, #fff1e6);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
+      align-items: center;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 3.5rem;
-      color: #ffffff;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 2s ease-in-out;
+      font-size: 2.5em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffffaa;
     }
 
-    .image-placeholder {
-      margin-top: 30px;
+    img {
       width: 250px;
       height: 250px;
-      background: rgba(255, 255, 255, 0.2);
-      border: 2px dashed white;
       border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 1.2rem;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
     }
 
     audio {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-top: 20px;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <!-- Background Animation -->
-  <div id="background"></div>
-
-  <div class="content">
-    <h1>Happiest Birthday Dobii</h1>
-    <div class="image-placeholder">Your Image Here 💖</div>
-  </div>
-
-  <audio autoplay loop controls>
-    <source src="your-piano-music.mp3" type="audio/mpeg">
+  <h1>Happiest Birthday Dobii 🎀</h1>
+  <img src="khushi.jpg" alt="Khushi's Photo">
+  <audio controls autoplay loop>
+    <source src="your-piano-music.mp3" type="audio/mp3" />
     Your browser does not support the audio element.
   </audio>
-
-  <!-- Vanta.js Background Animation -->
-  <script src="https://unpkg.com/three@0.121.1/build/three.min.js"></script>
-<script src="https://unpkg.com/vanta@latest/dist/vanta.clouds.min.js"></script>
-    VANTA.CLOUDS({
-      el: "#background",
-      mouseControls: true,
-      touchControls: true,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      skyColor: 0xffd6ec,
-      cloudColor: 0xffffff,
-      cloudShadowColor: 0xfed6fc,
-      sunColor: 0xffe0f7,
-      speed: 1.2
-    });
-  </script>
+  <div class="footer">Made with 💖 by your bestfriend</div>
 </body>
 </html>
