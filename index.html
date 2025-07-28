@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happiest Birthday Dobii 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(-45deg, #fbdce2, #d8eafd, #e4d9fb, #fff1e6);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffffffaa;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happiest Birthday Dobii 🎀</h1>
+  <img src="khushi.jpg" alt="Khushi's Photo">
+  <audio controls autoplay loop>
+    <source src="your-piano-music.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+  <div class="footer">Made with 💖 by your bestfriend</div>
+</body>
+</html>
